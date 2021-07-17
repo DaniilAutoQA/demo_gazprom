@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GazpromBankTests extends TestBase {
     @Test
     @Description("Тест проверяет, что открыта главная страница банк по title страницы")
-    @DisplayName("Проверка названия сайта")
+    @DisplayName("Verify title mane page")
     void titleTest() {
         step("Открыть главную страницу Газпром банка'", () ->
                 open("https://www.gazprombank.ru/"));
@@ -30,7 +30,7 @@ public class GazpromBankTests extends TestBase {
 
     @Test
     @Description("Тест выполняет проверку на надиие состов секции 'Выберите категорию'")
-    @DisplayName("Проверка секции 'Выберите категорию'")
+    @DisplayName("Verification section choice of categories")
     void verifyTitleOfCategory() {
         step("Открыть главную страницу Газпром банка", () -> {
             open("https://www.gazprombank.ru/");
@@ -47,8 +47,8 @@ public class GazpromBankTests extends TestBase {
     }
 
     @Test
-    @Description("Тест выполняет проверку рассчета дохода по вкладу «Ваш успех» без учета капитализации")
-    @DisplayName("Проверка калькулятора по вкладу «Ваш успех»")
+    @Description("Тест выполняет проверку расчета дохода по вкладу «Ваш успех» без учета капитализации")
+    @DisplayName("Verification calculation deposit")
     void verifyDeposits() {
         step("Открыть главную страницу Газпром банка", () -> {
             open("https://www.gazprombank.ru/");
