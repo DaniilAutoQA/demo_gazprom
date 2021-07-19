@@ -14,6 +14,7 @@ public class DriverSettings {
         Configuration.browser = Project.config.browser();
         Configuration.browserVersion = Project.config.browserVersion();
         Configuration.browserSize = Project.config.browserSize();
+        Configuration.timeout= 10000;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
